@@ -1,7 +1,7 @@
 #PacManGhost
 
-    -interface-
-	
+	-interface-
+
 	start @(|>>|)
 	stop @(|<<|)
 	update
@@ -9,10 +9,10 @@
     -machine-
 
     $GameStart => $Default
-    |>>|
-        init()
-        startUpdateTimer()
-        -> $WanderAroundBase ^
+		|>>|
+			init()
+			startUpdateTimer()
+			-> $WanderAroundBase ^
 
     $WanderAroundBase => $Default
         |update|
