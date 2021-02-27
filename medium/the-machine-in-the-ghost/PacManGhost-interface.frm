@@ -1,8 +1,8 @@
 #PacManGhost
 
 ...
-    -interface-
-	
+	-interface-
+
 	start @(|>>|)
 	stop @(|<<|)
 	update
