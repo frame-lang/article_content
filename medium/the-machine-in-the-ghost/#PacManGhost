@@ -26,10 +26,10 @@
             :: ^
 
     $WanderAroundMaze => $Default
-            |update|
-                isPowerPelletActive()   ? -> $FleeFromPlayer ^ ::
-                isPlayerDistanceClose() ? -> $SeekTowardsPlayer ^ ::
-                ^
+		|update|
+			isPowerPelletActive()   ? -> $FleeFromPlayer ^ ::
+			isPlayerDistanceClose() ? -> $SeekTowardsPlayer ^ ::
+			^
 
     $SeekTowardsPlayer => $Default
         |update|
